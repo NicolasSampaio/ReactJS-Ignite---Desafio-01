@@ -1,0 +1,101 @@
+.tasks {
+  width: 100%;
+
+  margin-top: 4rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.criadas {
+  color: var(--blue);
+}
+
+.counter {
+  background-color: var(--gray-400);
+  border-radius: 62.4375rem;
+
+  padding: 0.125rem 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.concluidas {
+  color: var(--purple);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--gray-500);
+
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  margin-top: 1.5rem;
+  padding: 16px;
+}
+
+.divCheckbox {
+  height: 1.5rem;
+
+  position: relative;
+  bottom: 0.3125rem;
+}
+
+.checkboxChecked {
+  position: relative;
+  z-index: 2;
+
+  cursor: pointer;
+}
+
+.checkboxNotChecked {
+  cursor: pointer;
+}
+
+.whiteBackgroundCheckCircle {
+  width: 1rem;
+  height: 1rem;
+
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+
+  border-radius: 50%;
+  background-color: var(--white);
+
+  cursor: pointer;
+}
+
+.task p {
+  max-width: 39rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pTaskChecked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.trashIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  margin-top: -1rem;
+  cursor: pointer;
+
+  position: relative;
+  top: 5px;
+  background: url("../assets/trash.svg") no-repeat;
+}
+
+.trashIcon:hover {
+  position: relative;
+  top: 5px;
+  background: url("../assets/trashHover.svg") no-repeat;
+}
